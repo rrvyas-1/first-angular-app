@@ -12,7 +12,7 @@ import { TasksComponent } from './components/tasks/tasks.component';
 })
 export class AppComponent {
   users = DUMMY_USERS;
-  selectedUserId: string = 'u1';
+  selectedUserId?: string;
 
   onSelectUser(id: string) {
     this.selectedUserId = id;
